@@ -1,6 +1,7 @@
 var chatlog = require('../lib/chatlog.js')
   , fs = require('fs')
   , path = require('path')
+  , _ = require('underscore')
 
 var UTF_8 = 'utf-8'
 
@@ -12,8 +13,10 @@ function Fixture(name) {
 }
 
 describe('Without params', function() {
-  var fixture = new Fixture('mac-qq')
-  it('should work with no params', function() {
-    chatlog(fixture.content).should.eql(fixture.result)
+  _.each(['mac-qq', 'skype-en'], function(fixtureName) {
+    var fixture = new Fixture(fixtureName)
+    it('should work with no params', function() {
+      chatlog(fixture.content).should.eql(fixture.result)
+    })
   })
 })
