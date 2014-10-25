@@ -20,3 +20,19 @@ describe('chatlog', function() {
     })
   })
 })
+
+var Time = require('../lib/time.js')
+
+describe('time', function() {
+  it('support basic time format', function() {
+    _.each([
+        [ '14-8-25 22:11:49', 1411654309000 ]
+      , [ '16:23:21', 59001000 ]
+      , [ '14-10-24 下午6:24:28', 1416824668000 ]
+      ], function(combined) {
+      var time = new Time(combined[0])
+        , expected = combined[1]
+      time.getTime().should.eql(expected)
+    })
+  })
+})
