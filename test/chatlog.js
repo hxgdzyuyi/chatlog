@@ -13,7 +13,7 @@ function Fixture(name) {
 }
 
 describe('chatlog', function() {
-  _.each(['mac-qq', 'skype-en'], function(fixtureName) {
+  _.each(['mac-qq', 'skype-en', 'skype-cn'], function(fixtureName) {
     var fixture = new Fixture(fixtureName)
     it('convert ' + fixtureName + ' to json', function() {
       chatlog(fixture.content).should.eql(fixture.result)
