@@ -1,6 +1,6 @@
 {
   "name": "chatlog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "转换纯文本聊天记录到 JSON 格式",
   "main": "lib/chatlog.js",
   "directories": {
