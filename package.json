@@ -1,0 +1,31 @@
+{
+  "name": "chatlog",
+  "version": "1.0.2",
+  "description": "转换纯文本聊天记录到 JSON 格式",
+  "main": "lib/chatlog.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.0.16",
+    "grunt-mocha": "^0.4.11",
+    "grunt-mocha-cli": "^1.10.0",
+    "underscore": "^1.7.0",
+    "should": "^4.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hxgdzyuyi/chatlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hxgdzyuyi/chatlog/issues"
+  },
+  "homepage": "https://github.com/hxgdzyuyi/chatlog"
+}

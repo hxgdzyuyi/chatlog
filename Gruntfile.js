@@ -12,4 +12,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', ['mochacli']);
   grunt.loadNpmTasks('grunt-mocha-cli');
+  grunt.loadNpmTasks('grunt-bump');
 }
