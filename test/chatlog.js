@@ -28,6 +28,9 @@ describe('chatlog#stat', function() {
       [ 'Haibo -  说: (2014-09-10 11:20:53)'
       , { name: 'Haibo', time: 1412911253000, content: '' }
       ]
+    , [ '苏 2014/10/29 10:19:05'
+      , { name: '苏', time: 1417227545000, content: '' }
+      ]
     ], function(combined) {
       var text = combined[0]
         , expected = combined[1]
@@ -48,6 +51,7 @@ describe('time', function() {
       , [ '2014-09-10 11:20:53', 1412911253000 ]
       , [ '16:23:21', 59001000 ]
       , [ '10:21:03', 37263000 ]
+      , [ '2014/10/29 10:19:05', 1417227545000 ]
       , [ '14-10-24 下午6:24:28', 1416824668000 ]
       ], function(combined) {
       var time = new Time(combined[0])
