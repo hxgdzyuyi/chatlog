@@ -53,6 +53,7 @@ describe('time', function() {
       , [ '10:21:03', 37263000 ]
       , [ '2014/10/29 10:19:05', 1417227545000 ]
       , [ '14-10-24 下午6:24:28', 1416824668000 ]
+      , [ '10/30/14, 10:25:02 PM', 1417314302000 ]
       ], function(combined) {
       var time = new Time(combined[0])
         , expected = combined[1]
